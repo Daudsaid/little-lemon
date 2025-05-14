@@ -1,10 +1,10 @@
 import React from 'react';
-import '../App.css';
 
-const Footer = () => {
+const Footer = ({ location }) => {
   return (
     <footer className="footer">
       <p>&copy; {new Date().getFullYear()} Little Lemon. All rights reserved.</p>
+      <p>Location: {location}</p>
     </footer>
   );
 };
