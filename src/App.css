@@ -1,33 +1,23 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   background: #fffbea;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Container */
-.container {
+.app {
   width: 100%;
   max-width: 1200px;
-  padding: 0 1rem;
   margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 /* Navbar */
 .navbar {
   background: #495e57;
+  padding: 1rem 2rem;
   color: white;
-  padding: 1rem 0;
-}
-
-.navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,6 +33,7 @@ body {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -61,50 +52,38 @@ body {
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: 600;
   transition: background 0.3s;
+  font-weight: 600;
 }
 
-.cta-button:hover {
-  background: #e3b500;
-}
-
-/* Hero Section */
+/* Hero Banner */
 .hero {
   background: linear-gradient(135deg, #e3b500 0%, #f4ce14 100%);
-  padding: 5rem 1rem;
+  padding: 6rem 1rem;
   text-align: center;
 }
 
-.hero h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  margin-bottom: 1rem;
+.hero-content h2 {
+  font-size: 3rem;
 }
 
-.hero p {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  margin-bottom: 2rem;
+.hero-content p {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
 }
 
 .hero-button {
   background: #495e57;
   color: white;
-  border: none;
   padding: 0.75rem 1.5rem;
+  border: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s;
-  font-size: 1rem;
-}
-
-.hero-button:hover {
-  background: #333;
 }
 
 /* Menu Section */
 .menu-section {
-  padding: 5rem 1rem;
-  background: #fffbea;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -115,23 +94,10 @@ body {
   margin-top: 2rem;
 }
 
-.menu-item {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.menu-item:hover {
-  transform: translateY(-5px);
-}
-
-/* Reservation Section */
+/* Reservation Form */
 .reservation-section {
-  padding: 5rem 1rem;
   background: #fff4d9;
-  text-align: center;
+  padding: 4rem 1rem;
 }
 
 .reservation-form {
@@ -142,24 +108,10 @@ body {
   margin: 0 auto;
 }
 
-.reservation-form input {
+.reservation-form input, .reservation-form button {
   padding: 0.75rem;
   border-radius: 8px;
   border: 1px solid #ccc;
-}
-
-.reservation-form button {
-  background: #495e57;
-  color: white;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.reservation-form button:hover {
-  background: #333;
 }
 
 /* Footer */
@@ -168,19 +120,4 @@ body {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
-}
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .cta-button {
-    margin-top: 1rem;
-    width: 100%;
-  }
 }
