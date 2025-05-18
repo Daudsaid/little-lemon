@@ -36,7 +36,7 @@ npm start
 
 🌍 Live Demo
 
-Link: [Coming Soon]
+Link: https://little-lemon-99g09m3l7-daudsaids-projects.vercel.app/
 
 ⸻
 
